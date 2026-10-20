@@ -1,0 +1,11 @@
+packages:
+  - "."
+  - "mcp-server"
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
+
+onlyBuiltDependencies:
+  - esbuild
+  - workerd

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792420382773,
+      "tag": "0000_material_lockjaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792430675870,
+      "tag": "0001_puzzling_sage",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792460934899,
+      "tag": "0002_outgoing_mother_askani",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Laporkan celah keamanan
+    url: https://github.com/rizalahmaddd/desk/security/advisories/new
+    about: Celah keamanan dilaporkan secara privat, bukan lewat issue publik.
+  - name: Kontak via WhatsApp
+    url: https://wa.me/6285777775477
+    about: Pertanyaan, bantuan, atau kustomisasi.

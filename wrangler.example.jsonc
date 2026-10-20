@@ -1,0 +1,39 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "projectdesk",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-19",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "workers_dev": true,
+  // Uncomment to serve the app on your own domain.
+  // "routes": [{ "pattern": "desk.example.com", "custom_domain": true }],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "projectdesk-db",
+      "database_id": "<your-d1-database-id>",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "projectdesk-files"
+    }
+  ],
+  "vars": {
+    "APP_URL": "https://desk.example.com",
+    "BETTER_AUTH_URL": "https://desk.example.com",
+    "EMAIL_FROM": "Desk <noreply@example.com>"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": ["0 20 * * *"]
+  }
+}
